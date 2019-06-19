@@ -1,0 +1,79 @@
+ul {
+  list-style: none;
+}
+
+.main-column {
+  width: 75%;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .page-title {
+    }
+    .global-nav {
+      ul {
+        padding: 0;
+        display: flex;
+        li {
+          padding: 0 30px;
+          font-weight: bold;
+          border-right: 1px solid #000;
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  article {
+    .top-img-box {
+      background-color: #1D2D44;
+      img {
+        width: 100%;
+        vertical-align: bottom;
+      }
+      p {
+        color: #fff;
+      }
+    }
+    .news,
+    .code-village-real,
+    .self-study {
+      .section-title {
+        span {
+          color: #747373;
+          font-size: 0.5em;
+          font-weight: normal;
+          &::before {
+            content: "\A";
+            white-space: pre;
+          }
+        }
+      }
+    }
+    .news {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          .img-box {
+            width: 50%;
+            background-color: blue;
+          }
+          .tmp {
+            width: 50%;
+          }
+          &:first-child {
+            display: flex;
+            width: 100%;
+          }
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}
