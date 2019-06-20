@@ -23,29 +23,101 @@ ul {
       vertical-align: bottom; }
     .main-column article .top-img-box p {
       color: #fff; }
-  .main-column article .news .section-title span,
-  .main-column article .code-village-real .section-title span,
-  .main-column article .self-study .section-title span {
-    color: #747373;
-    font-size: 0.5em;
-    font-weight: normal; }
-    .main-column article .news .section-title span::before,
-    .main-column article .code-village-real .section-title span::before,
-    .main-column article .self-study .section-title span::before {
-      content: "\A";
-      white-space: pre; }
-  .main-column article .news ul {
+  .main-column article .news,
+  .main-column article .code-village-real,
+  .main-column article .self-study {
+    padding-bottom: 100px; }
+    .main-column article .news ul,
+    .main-column article .code-village-real ul,
+    .main-column article .self-study ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .main-column article .news ul li .article-box .updated-date,
+      .main-column article .code-village-real ul li .article-box .updated-date,
+      .main-column article .self-study ul li .article-box .updated-date {
+        color: #747373; }
+      .main-column article .news ul li .article-box .article-foot,
+      .main-column article .code-village-real ul li .article-box .article-foot,
+      .main-column article .self-study ul li .article-box .article-foot {
+        position: relative; }
+        .main-column article .news ul li .article-box .article-foot .category,
+        .main-column article .code-village-real ul li .article-box .article-foot .category,
+        .main-column article .self-study ul li .article-box .article-foot .category {
+          display: inline-block;
+          line-height: 2;
+          background-color: #F3C969;
+          width: 120px;
+          text-align: center;
+          color: #fff; }
+        .main-column article .news ul li .article-box .article-foot .more,
+        .main-column article .code-village-real ul li .article-box .article-foot .more,
+        .main-column article .self-study ul li .article-box .article-foot .more {
+          position: absolute;
+          right: 0;
+          top: 4px;
+          color: #747373; }
+    .main-column article .news .section-title span,
+    .main-column article .code-village-real .section-title span,
+    .main-column article .self-study .section-title span {
+      color: #747373;
+      font-size: 0.5em;
+      font-weight: normal; }
+      .main-column article .news .section-title span::before,
+      .main-column article .code-village-real .section-title span::before,
+      .main-column article .self-study .section-title span::before {
+        content: "\A";
+        white-space: pre; }
+    .main-column article .news .bd1,
+    .main-column article .code-village-real .bd1,
+    .main-column article .self-study .bd1 {
+      width: 25%;
+      border: 4px solid #1D2D44;
+      display: inline-block;
+      box-sizing: border-box; }
+    .main-column article .news .bd2,
+    .main-column article .code-village-real .bd2,
+    .main-column article .self-study .bd2 {
+      width: 75%;
+      border: 4px solid #D8D8D8;
+      box-sizing: border-box;
+      display: inline-block; }
+  .main-column article .news ul li:first-child {
     display: flex;
-    flex-wrap: wrap; }
-    .main-column article .news ul li .img-box {
+    width: 100%;
+    padding-top: 28px; }
+    .main-column article .news ul li:first-child .img-box {
       width: 50%;
       background-color: blue; }
-    .main-column article .news ul li .tmp {
+    .main-column article .news ul li:first-child .article-box {
       width: 50%; }
-    .main-column article .news ul li:first-child {
-      display: flex;
-      width: 100%; }
-    .main-column article .news ul li:nth-child(2), .main-column article .news ul li:nth-child(3), .main-column article .news ul li:nth-child(4) {
-      width: 30%; }
+  .main-column article .news ul li:nth-child(2), .main-column article .news ul li:nth-child(3), .main-column article .news ul li:nth-child(4) {
+    width: 28%;
+    padding-top: 36px; }
+    .main-column article .news ul li:nth-child(2) .img-box, .main-column article .news ul li:nth-child(3) .img-box, .main-column article .news ul li:nth-child(4) .img-box {
+      width: 100%;
+      height: 10px;
+      background-color: blue; }
+  .main-column article .code-village-real ul li {
+    width: 28%; }
+    .main-column article .code-village-real ul li:nth-child(1), .main-column article .code-village-real ul li:nth-child(2), .main-column article .code-village-real ul li:nth-child(3) {
+      padding-top: 28px; }
+    .main-column article .code-village-real ul li:nth-child(4), .main-column article .code-village-real ul li:nth-child(5), .main-column article .code-village-real ul li:nth-child(6) {
+      padding-top: 36px; }
+    .main-column article .code-village-real ul li .img-box {
+      width: 100%;
+      height: 10px;
+      background-color: blue; }
+  .main-column article .code-village-real .see-more {
+    margin: 85px auto 0;
+    line-height: 4;
+    width: 256px;
+    text-align: center;
+    background-color: #1D2D44;
+    color: #fff; }
+  .main-column article .self-study ul li {
+    width: 47%; }
+    .main-column article .self-study ul li .article-foot {
+      height: 32px; }
 
 /*# sourceMappingURL=main.css.map */

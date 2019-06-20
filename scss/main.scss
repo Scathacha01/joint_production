@@ -39,6 +39,36 @@ ul {
     .news,
     .code-village-real,
     .self-study {
+      padding-bottom: 100px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+          .article-box {
+            .updated-date {
+              color: #747373;
+            }
+            .article-foot {
+              position: relative;
+              .category {
+                display: inline-block;
+                line-height: 2;
+                background-color: #F3C969;
+                width: 120px;
+                text-align: center;
+                color: #fff;
+              }
+              .more {
+                position: absolute;
+                right: 0;
+                top: 4px;
+                color: #747373;
+              }
+            }
+          }
+        }
+      }
       .section-title {
         span {
           color: #747373;
@@ -50,27 +80,84 @@ ul {
           }
         }
       }
+      .bd1 {
+        width: 25%;
+        border: 4px solid #1D2D44;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+      .bd2 {
+        width: 75%;
+        border: 4px solid #D8D8D8;
+        box-sizing: border-box;
+        display: inline-block;
+      }
     }
     .news {
       ul {
-        display: flex;
-        flex-wrap: wrap;
         li {
-          .img-box {
-            width: 50%;
-            background-color: blue;
-          }
-          .tmp {
-            width: 50%;
-          }
           &:first-child {
             display: flex;
             width: 100%;
+            padding-top: 28px;
+            .img-box {
+              width: 50%;
+              background-color: blue;
+            }
+            .article-box {
+              width: 50%;
+            }
           }
           &:nth-child(2),
           &:nth-child(3),
           &:nth-child(4) {
-            width: 30%;
+            width: 28%;
+            padding-top: 36px;
+            .img-box {
+              width: 100%;
+              height: 10px;
+              background-color: blue;
+            }
+          }
+        }
+      }
+    }
+    .code-village-real {
+      ul {
+        li {
+          width: 28%;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            padding-top: 28px;
+          }
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            padding-top: 36px;
+          }
+          .img-box {
+            width: 100%;
+            height: 10px;
+            background-color: blue;
+          }
+        }
+      }
+      .see-more {
+        margin: 85px auto 0;
+        line-height: 4;
+        width: 256px;
+        text-align: center;
+        background-color: #1D2D44;
+        color: #fff;
+      }
+    }
+    .self-study {
+      ul {
+        li {
+          width: 47%;
+          .article-foot {
+            height: 32px;
           }
         }
       }
