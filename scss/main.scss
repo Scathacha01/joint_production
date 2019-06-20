@@ -15,11 +15,17 @@ ul {
         padding: 0;
         display: flex;
         li {
+          transform: skewX(-20deg);
           padding: 0 30px;
           font-weight: bold;
           border-right: 1px solid #000;
           &:last-child {
             border: none;
+          }
+          a {
+            display: block;
+            transform: skewX(20deg);
+            text-decoration: none;
           }
         }
       }
@@ -161,6 +167,12 @@ ul {
           }
         }
       }
+    }
+  }
+  .bottom-img-box {
+    img {
+      width: 100%;
+      vertical-align: bottom;
     }
   }
 }

@@ -11,11 +11,16 @@ ul {
       padding: 0;
       display: flex; }
       .main-column .header .global-nav ul li {
+        transform: skewX(-20deg);
         padding: 0 30px;
         font-weight: bold;
         border-right: 1px solid #000; }
         .main-column .header .global-nav ul li:last-child {
           border: none; }
+        .main-column .header .global-nav ul li a {
+          display: block;
+          transform: skewX(20deg);
+          text-decoration: none; }
   .main-column article .top-img-box {
     background-color: #1D2D44; }
     .main-column article .top-img-box img {
@@ -119,5 +124,8 @@ ul {
     width: 47%; }
     .main-column article .self-study ul li .article-foot {
       height: 32px; }
+  .main-column .bottom-img-box img {
+    width: 100%;
+    vertical-align: bottom; }
 
 /*# sourceMappingURL=main.css.map */
