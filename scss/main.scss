@@ -219,9 +219,9 @@ p {
       position: fixed;
       border-bottom: 1px solid #000;
       z-index: 10;
+      display: block;
       h1 {
       }
-      display: block;
       .slide-trigger {
         display: inline-block;
         position: fixed;
@@ -273,7 +273,7 @@ p {
        }
     }
     article {
-    // position: relative;
+    position: relative;
       .news {
         ul {
           li {
@@ -357,14 +357,22 @@ body {
     display: block;
   }
   .sub-column {
-    position: sticky;
-    display: none;
+    transition: transform .5s;
+    position: fixed;
+    // display: none;
+    transform: translateX(100%);
     width: 40%;
     top: 85px;
     right: 0;
     background-color: #fff;
+    overflow: scroll;
+    p {
+      overflow: scroll;
+
+    }
     &.open {
-      display: block;
+      // display: block;
+      transform: translateX(-100%);
     }
   }
 }

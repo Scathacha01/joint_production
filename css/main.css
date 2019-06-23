@@ -205,26 +205,28 @@ p {
             padding-left: 0; }
           .main-column .header .global-nav ul li:last-child {
             padding-right: 0; }
-    .main-column article .news ul li:first-child {
-      display: list-item;
-      width: 47%; }
-      .main-column article .news ul li:first-child .img-box,
-      .main-column article .news ul li:first-child .article-box {
-        width: 100%; }
-      .main-column article .news ul li:first-child .img-box {
-        height: 10px; }
-    .main-column article .news ul li:nth-child(2), .main-column article .news ul li:nth-child(3), .main-column article .news ul li:nth-child(4) {
-      width: 47%; }
-    .main-column article .news ul li:nth-child(2) {
-      padding-top: 10px; }
-    .main-column article .code-village-real ul li:nth-child(1), .main-column article .code-village-real ul li:nth-child(2) {
-      padding-top: 10px; }
-    .main-column article .code-village-real ul li:nth-child(3), .main-column article .code-village-real ul li:nth-child(4), .main-column article .code-village-real ul li:nth-child(5), .main-column article .code-village-real ul li:nth-child(6) {
-      padding-top: 36px; }
-    .main-column article .news ul li,
-    .main-column article .code-village-real ul li,
-    .main-column article .self-study ul li {
-      width: 47%; } }
+    .main-column article {
+      position: relative; }
+      .main-column article .news ul li:first-child {
+        display: list-item;
+        width: 47%; }
+        .main-column article .news ul li:first-child .img-box,
+        .main-column article .news ul li:first-child .article-box {
+          width: 100%; }
+        .main-column article .news ul li:first-child .img-box {
+          height: 10px; }
+      .main-column article .news ul li:nth-child(2), .main-column article .news ul li:nth-child(3), .main-column article .news ul li:nth-child(4) {
+        width: 47%; }
+      .main-column article .news ul li:nth-child(2) {
+        padding-top: 10px; }
+      .main-column article .code-village-real ul li:nth-child(1), .main-column article .code-village-real ul li:nth-child(2) {
+        padding-top: 10px; }
+      .main-column article .code-village-real ul li:nth-child(3), .main-column article .code-village-real ul li:nth-child(4), .main-column article .code-village-real ul li:nth-child(5), .main-column article .code-village-real ul li:nth-child(6) {
+        padding-top: 36px; }
+      .main-column article .news ul li,
+      .main-column article .code-village-real ul li,
+      .main-column article .self-study ul li {
+        width: 47%; } }
 .sub-column {
   width: 25%; }
   .sub-column h3 {
@@ -249,13 +251,17 @@ body {
     display: block; }
 
   .sub-column {
-    position: sticky;
-    display: none;
+    transition: transform .5s;
+    position: fixed;
+    transform: translateX(100%);
     width: 40%;
     top: 85px;
     right: 0;
-    background-color: #fff; }
+    background-color: #fff;
+    overflow: scroll; }
+    .sub-column p {
+      overflow: scroll; }
     .sub-column.open {
-      display: block; } }
+      transform: translateX(-100%); } }
 
 /*# sourceMappingURL=main.css.map */
